@@ -64,6 +64,12 @@
     margin-left: 0 !important;
 }
 
+/* "安全搜索功能已关闭"提示 */
+.zNFAfd {
+    width: 670px;
+    margin: 24px auto 4px auto;
+}
+
 /* 搜索结果统计 */
 #slim_appbar > div {
     margin: auto;
@@ -119,7 +125,7 @@
 #rhs {
     position: absolute;
     margin-left: 1120px;
-    /* top: 286px; */
+    top: 128px;
     z-index: 1;
 }
 .main,
@@ -131,10 +137,15 @@
 
 
 /* 搜索结果顶部，人物栏居中显示 */
+.GyAeWb {
+    display: block;
+}
 .XqFnDf {
-    flex: 0 auto;
     width: var(--center-width);
-    margin: auto;
+    margin: 0 auto;
+}
+.GCSyeb {
+    position: static;
 }
 
 

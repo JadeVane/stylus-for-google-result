@@ -13,3 +13,5 @@ echo "${content_raw}" \
 | tr -s ' ' ' ' \
 | sed 's/^[ ][ ]*//g' \
 | sed '/^$\|^\s*$/d' > ${min_file}
+
+cat ${min_file} | xclip -sel clip
