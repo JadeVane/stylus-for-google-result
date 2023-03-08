@@ -6,19 +6,30 @@
 /* 搜索框 */
 .tsf,
 .tsf .A8SBwf {
-    width: 100% !important;
     padding-left: 0 !important;
-    margin-left: 0 !important;
+    width: var(--center-width);
+    margin: 0 auto !important;
+    display: flex;
 }
 .logo {
-    left: 0;
+}
+.RNNXgb {
+    display: inline-flex;
+    width: unset;
+    flex: 1;
 }
 .minidiv .RNNXgb {
     margin: 10px auto;
 }
 
+/* 特殊节日时，搜索框后面的背景图 */
+.JcyVnf {
+    right: -168px;
+}
+
 /* 搜索框 - 输入状态 */
-.sbfc .RNNXgb, .emcav .RNNXgb {
+.sbfc .RNNXgb,
+.emcav .RNNXgb {
     margin: auto;
 }
 .srp .UUbT9 {
@@ -64,6 +75,22 @@
     margin-left: 0 !important;
 }
 
+/* 筛选工具 */
+#tn_1 {
+    max-width: var(--center-width);
+    margin: auto;
+}
+.LkcePc {
+    display: none;
+}
+
+/* 文字超过最大长度的提示 */
+.JsW2z {
+    margin: 0 auto 8px auto;
+    max-width: var(--center-width);
+    padding-left: 10px;
+}
+
 /* "安全搜索功能已关闭"提示 */
 .zNFAfd {
     width: 670px;
@@ -95,7 +122,7 @@
 }
 
 /* 把搜索结果中的网址移到标题下方 */
-.B6fmyf {
+/*.B6fmyf {
      position: unset;
      top: unset;
      height: unset;
@@ -115,7 +142,7 @@
 }
 .LC20lb {
     margin-bottom: 0;
-}
+}*/
 
 
 
@@ -124,9 +151,9 @@
 /* 将维基百科的信息放到右侧，防止将搜索结果挤占到左侧 */
 #rhs {
     position: absolute;
-    margin-left: 1120px;
-    top: 128px;
+    top: 142px;
     z-index: 1;
+    left: calc(50% + 300px);
 }
 .main,
 .e9EfHf,
@@ -157,7 +184,8 @@
     padding-left: 0;
     margin-left: 0;
 }
-.fbar {
+.B4GxFc,
+.fbar + .fbar {
     width: var(--center-width);
     margin: auto;
 }
@@ -165,5 +193,18 @@
     padding-left: 0;
 }
 .B4GxFc {
+    margin-left: 0;
+}
+
+
+
+
+/* 搜索结果中的特殊词条展示，如搜索“电影“ */
+.appbar {
+    width: var(--center-width);
+    margin: auto !important;
+}
+.XKnPEd,
+.aHd5n {
     margin-left: 0;
 }
