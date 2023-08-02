@@ -1,7 +1,9 @@
 .srp {
     --center-width: 670px;
 }
-
+.emcav.A8SBwf.h3L8Ub {
+    width: var(--center-width);
+}
 
 /* 搜索框 */
 .tsf,
@@ -11,15 +13,11 @@
     margin: 0 auto !important;
     display: flex;
 }
-.logo {
-}
 .RNNXgb {
-    display: inline-flex;
-    width: unset;
     flex: 1;
 }
 .minidiv .RNNXgb {
-    margin: 10px auto;
+    margin: 10px auto !important;
 }
 
 /* 特殊节日时，搜索框后面的背景图 */
@@ -33,12 +31,13 @@
     margin: auto;
 }
 .srp .UUbT9 {
-    width: 737px;
+    width: 670px;
     margin: auto;
     left: 0;
     right: 0;
+    top: 44px;
 }
-.minidiv .A8SBwf {
+.minidiv .logo {
     margin: 10px auto !important;
 }
 
@@ -73,6 +72,16 @@
 }
 #hdtb-msb > div > div {
     margin-left: 0 !important;
+}
+.xhjkHe {
+    display: flex;
+    flex: 1;
+    max-width: calc(var(--center-width) + var(--rhs-margin));
+    margin: auto;
+}
+.appbar,
+#result-stats {
+    padding-left: 0;
 }
 
 /* 筛选工具 */
@@ -207,4 +216,37 @@
 .XKnPEd,
 .aHd5n {
     margin-left: 0;
+}
+
+
+/* 以图搜图的搜索结果 */
+.jOYx5b {
+    width: 100%;
+}
+.o6juZc {
+    margin: auto;
+    width: 580px;
+}
+.dAEiw.dXdtIf > div:first-child {
+    width: 100%;
+}
+/*.cj2HCb.iuN0sf {
+    position: absolute;
+    right: 0;
+    top: 20px;
+}*/
+.iSZmU {
+    margin-left: 0;
+}
+.tAcEof {
+    margin-top: 2px;
+}
+.tAcEof {
+    min-width: 580px;
+    margin: auto;
+    padding-right: 0;
+    padding-left: 194px;
+}
+.Si7Nvc {
+    padding-left: 156px;
 }
