@@ -19,6 +19,9 @@
 .minidiv .RNNXgb {
     margin: 10px auto !important;
 }
+.KLEmSd {
+    border-color: #E2E2E2;
+}
 
 /* 特殊节日时，搜索框后面的背景图 */
 .JcyVnf {
@@ -76,8 +79,7 @@
 .xhjkHe {
     display: flex;
     flex: 1;
-    max-width: calc(var(--center-width) + var(--rhs-margin));
-    margin: auto;
+    max-width: unset;
 }
 .appbar,
 #result-stats {
@@ -127,7 +129,10 @@
     margin: auto !important;
 }
 #center_col {
-    margin: auto;
+    margin: 0 auto;
+}
+#center_col.xKxVbb {
+    margin-left: 20px;
 }
 
 /* 把搜索结果中的网址移到标题下方 */
@@ -155,7 +160,18 @@
 
 
 
-
+.qogDvd {
+    max-width: calc(var(--center-width) + var(--rhs-margin));
+    margin: auto;
+    padding-left: 0;
+}
+div[role="navigation"] > div:last-child {
+    position: absolute;
+    right: 0;
+}
+.JiJthb {
+    margin-top: -2px;
+}
 
 /* 将维基百科的信息放到右侧，防止将搜索结果挤占到左侧 */
 #rhs {
