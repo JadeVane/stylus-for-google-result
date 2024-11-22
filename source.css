@@ -51,6 +51,7 @@ form[role="search"] > div:first-child > div:first-child {
     margin: 0 !important;
     /*  左侧 padding 是预留给输入状态时显示在左侧的搜索 icon 的，删除会导致一点击搜索框，字的位置就变化，所以保留 padding  */
     padding-left: 0 !important;
+    transform: unset;
 }
 /* 去除搜索框输入状态显示在输入框左边的搜索 icon */
 .emcav .iblpc,
@@ -80,7 +81,10 @@ form[role="search"] .logo + div + div {
     margin: 0;
     width: var(--center-width);
 }
-
+/* 避免切换至输入状态时 logo 的左移 */
+.logo {
+    margin-left: 0 !important;
+}
 
 
 
