@@ -5,30 +5,6 @@
     width: var(--center-width);
 }
 
-/* 搜索框 */
-/*.tsf,
-.tsf .A8SBwf {
-    padding-left: 0 !important;
-    width: var(--center-width);
-    margin: 0 auto !important;
-    display: flex;
-}*/
-/*.RNNXgb {
-    flex: 1;
-}
-.minidiv .RNNXgb {
-    margin: 10px auto !important;
-}
-.KLEmSd {
-    border-color: #E2E2E2;
-}
-.emcav .iblpc {
-    padding-right: 6px;
-}*/
-/*.CcAdNb {
-    display: none;
-}*/
-
 
 /* 搜索结果居中 */
 #rcnt > div:not(.xKxVbb) {
@@ -206,14 +182,6 @@ div[id^="abss_"] > ol[role="none"] {
 #searchform > div:last-of-type {
     margin-left: 0;
 }
-/* 难以用 id 定位，只能用自动生成的 class 定位 */
-/*.VuvQze .RfPPs {
-    right: 8px !important;
-    left: unset !important;
-    width: 680px !important;
-    top: 64px !important;
-    height: calc(100% - 16px) !important;
-}*/
 
 /* 购物栏目 */
 .appbar {
@@ -236,8 +204,6 @@ div[data-st-tgt="appbar"] > div:first-of-type > div:last-of-type {
 .GCSyeb {
     position: static;
 }
-
-
 
 
 
@@ -281,11 +247,6 @@ div[data-st-tgt="appbar"] > div:first-of-type > div:last-of-type {
 .dAEiw.dXdtIf > div:first-child {
     width: 100%;
 }
-/*.cj2HCb.iuN0sf {
-    position: absolute;
-    right: 0;
-    top: 20px;
-}*/
 .iSZmU {
     margin-left: 0;
 }
