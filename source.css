@@ -31,9 +31,17 @@
 
 
 /* 搜索结果居中 */
-/*   注：没有单独的id，只能用class定位 */
-#center_col.ufC5Cb {
+#rcnt > div:not(.xKxVbb) {
+    display: flex;
     width: var(--center-width);
+    margin: auto;
+}
+/* 将维基百科的信息放到右侧，防止将搜索结果挤占到左侧 */
+#center_col:not(.xKxVbb) {
+    min-width: 100%;
+}
+#rhs {
+    margin-left: 24px;
 }
 /* 已登录账户 / 设置按钮浮动到右边，然后搜索框就可以居中 */
 form[role="search"] + div {
@@ -193,6 +201,20 @@ div[id^="abss_"] > ol[role="none"] {
     right: 0;
 }
 
+
+/* --------------- 图片搜索结果 --------------- */
+#searchform > div:last-of-type {
+    margin-left: 0;
+}
+/* 难以用 id 定位，只能用自动生成的 class 定位 */
+/*.VuvQze .RfPPs {
+    right: 8px !important;
+    left: unset !important;
+    width: 680px !important;
+    top: 64px !important;
+    height: calc(100% - 16px) !important;
+}*/
+
 /* 购物栏目 */
 .appbar {
     width: 100% !important;
@@ -200,20 +222,6 @@ div[id^="abss_"] > ol[role="none"] {
 div[data-st-tgt="appbar"] > div:first-of-type > div:last-of-type {
     margin: 0 auto;
     width: var(--center-width);
-}
-
-/* 将维基百科的信息放到右侧，防止将搜索结果挤占到左侧 */
-#rhs {
-    position: absolute;
-    top: 142px;
-    z-index: 1;
-    left: calc(50% + 300px);
-}
-.main,
-.e9EfHf,
-#rcnt,
-#rhs {
-    background: inherit;
 }
 
 
