@@ -7,9 +7,15 @@
 
 
 /* 搜索结果居中 */
-#rcnt > div:not(.xKxVbb) {
-    display: flex;
+#rcnt:not(.gIatYd) {
     width: var(--center-width);
+    display: flex;
+    flex-wrap: nowrap;
+}
+#rcnt > #center_col:not(.xKxVbb) {
+    display: flex;
+    flex-flow: column;
+/*    width: var(--center-width);*/
     margin: auto;
 }
 /* 将维基百科的信息放到右侧，防止将搜索结果挤占到左侧 */
@@ -56,7 +62,7 @@ form[role="search"] > div:first-child > div:first-child {
 /* 搜索框 - 输入状态 */
 form[role="search"] .logo + div,
 form[role="search"] .logo + div + div > div:first-child > div:nth-of-type(4) {
-    width: var(--center-width);
+    width: var(--center-width) !important;
     margin: 0 !important;
     box-sizing: border-box;
 }
@@ -73,6 +79,13 @@ form[role="search"] .logo + div + div {
 
 
 /* 搜索结果分类 */
+.y3NyWc .TrmO7 {
+    min-width: unset;
+    max-width: var(--center-width);
+}
+.sBbkle {
+    padding-left: unset;
+}
 #hdtb-msb {
     margin: auto !important;
     float: unset !important;
