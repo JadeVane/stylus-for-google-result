@@ -7,12 +7,15 @@
 
 
 /* 搜索结果居中 */
-#rcnt:not(.gIatYd) {
-    width: var(--center-width);
+#rcnt:not(.gIatYd) > div {
     display: flex;
     flex-wrap: nowrap;
+    width: var(--center-width);
+    margin: 0 auto;
 }
-#rcnt > #center_col:not(.xKxVbb) {
+#rcnt:not(.gIatYd) #center_col {
+}
+#center_col:not(.xKxVbb) {
     display: flex;
     flex-flow: column;
 /*    width: var(--center-width);*/
@@ -207,12 +210,12 @@ div[data-st-tgt="appbar"] > div:first-of-type > div:last-of-type {
 
 
 /* 搜索结果顶部，人物栏居中显示 */
-.GyAeWb {
-    display: block;
+.GyAeWb.EyBRub {
+    flex-flow: column;
 }
+/* 人物搜索 - 名字 */
 .XqFnDf {
     width: var(--center-width);
-    margin: 0 auto;
 }
 .GCSyeb {
     position: static;
