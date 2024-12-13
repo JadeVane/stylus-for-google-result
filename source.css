@@ -13,8 +13,6 @@
     width: var(--center-width);
     margin: 0 auto;
 }
-#rcnt:not(.gIatYd) #center_col {
-}
 #center_col:not(.xKxVbb) {
     display: flex;
     flex-flow: column;
@@ -35,9 +33,13 @@ form[role="search"] + div {
 }
 /* 让搜索框居中 */
 form[role="search"] {
-    margin: 0 auto;
+    margin: auto;
     width: var(--center-width);
     flex-grow: 0;
+}
+/* 让搜索框垂直居中 */
+#searchform.minidiv {
+    height: 52px;
 }
 /* 去除搜索框两边多余的空白 */
 form[role="search"] > div:first-child > div:first-child {
@@ -197,6 +199,7 @@ div[id^="abss_"] > ol[role="none"] {
 /* --------------- 图片搜索结果 --------------- */
 #searchform > div:last-of-type {
     margin-left: 0;
+    height: 100%;
 }
 
 /* 购物栏目 */
