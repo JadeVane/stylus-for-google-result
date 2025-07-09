@@ -7,7 +7,7 @@
 
 
 /* 搜索结果居中 */
-#rcnt:not(.gIatYd) > div {
+/*#rcnt:not(.gIatYd) > div {
     display: flex;
     flex-wrap: nowrap;
     width: var(--center-width);
@@ -16,16 +16,24 @@
 #center_col:not(.xKxVbb) {
     display: flex;
     flex-flow: column;
-/*    width: var(--center-width);*/
     margin: auto;
-}
+}*/
+/*#rcnt {
+    display: flex;
+    gap: 32px;
+}*/
 /* 将维基百科的信息放到右侧，防止将搜索结果挤占到左侧 */
 #center_col:not(.xKxVbb) {
     min-width: 100%;
 }
 #rhs {
-    margin-left: 24px;
+    position: absolute;
+    top: 32px;
+    left: 758px;
+    width: 100%;
+    max-width: 320px;
 }
+
 /* 已登录账户 / 设置按钮浮动到右边，然后搜索框就可以居中 */
 form[role="search"] + div {
     position: absolute;
@@ -43,10 +51,18 @@ form[role="search"] {
 }
 /* 去除搜索框两边多余的空白 */
 form[role="search"] > div:first-child > div:first-child {
-    margin: 0 !important;
+    /*margin: 0 !important;*/
     /*  左侧 padding 是预留给输入状态时显示在左侧的搜索 icon 的，删除会导致一点击搜索框，字的位置就变化，所以保留 padding  */
     padding-left: 0 !important;
     transform: unset;
+}
+@media (min-width: 940px) and (max-width: 1300px) {
+    #gsr .A8SBwf {
+        margin-left: 0 !important;
+    }
+}
+.A8SBwf {
+    margin-left: 0;
 }
 /* 去除搜索框输入状态显示在输入框左边的搜索 icon */
 .emcav .iblpc,
@@ -161,10 +177,16 @@ form[role="search"] .logo + div + div {
 }
 .M8OgIe {
     margin-left: 0px;
-    width: calc(var(--center-width) + 320px);
+    /*width: calc(var(--center-width) + 320px);*/
 }
 #rcnt {
     margin: auto !important;
+    max-width: 684px;
+    position: relative;
+}
+/* 图片视图不限制宽度 */
+#rcnt.gIatYd {
+    max-width: unset;
 }
 /*#center_col {
     margin: 0 auto;
@@ -177,11 +199,14 @@ form[role="search"] .logo + div + div {
 
 
 /* 全部/购物/图片/新闻/.... */
-div[role="navigation"][data-st-tgt="mode"] > div:first-of-type > div:first-of-type > div:first-of-type > h1 + div > div:first-of-type,
-#main > div > style + div > div[role="navigation"] {
+.GG4mbd.P3mIxe,
+.qogDvd {
     padding: 0;
     margin: 0 auto;
     width: var(--center-width);
+}
+.qogDvd {
+    margin-top: -8px;
 }
 div[data-st-tgt="mode"] h1 + div > div > div {
     margin-left: 0;
